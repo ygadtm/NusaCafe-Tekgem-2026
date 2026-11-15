@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dbqyl17vpgg1y"]
+
+[ext_resource type="PackedScene" uid="uid://wpu3and3xeca" path="res://scenes/actors/Player.tscn" id="1_elqb8"]
+[ext_resource type="PackedScene" uid="uid://kiknhfedlmli" path="res://scenes/wordl/wordl.tscn" id="3_q24mn"]
+[ext_resource type="PackedScene" uid="uid://bcthqdowmvgw7" path="res://scenes/object/object.tscn" id="4_gyg6b"]
+
+[sub_resource type="Environment" id="Environment_mm1bc"]
+glow_enabled = true
+
+[node name="Main" type="Node2D" unique_id=702149438]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=518910393]
+position = Vector2(580, 326)
+
+[node name="Wordl" parent="." unique_id=657847810 instance=ExtResource("3_q24mn")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1322380155]
+environment = SubResource("Environment_mm1bc")
+
+[node name="Object" parent="." unique_id=1112189555 instance=ExtResource("4_gyg6b")]
+position = Vector2(-2, 5)
+
+[node name="MC" parent="." unique_id=752723497 instance=ExtResource("1_elqb8")]
+position = Vector2(52, 224)

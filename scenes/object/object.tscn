@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bcthqdowmvgw7"]
+
+[ext_resource type="PackedScene" uid="uid://8mstyvgg02o7" path="res://scenes/object/table2seat.tscn" id="1_qdqmx"]
+[ext_resource type="PackedScene" uid="uid://b1r3q1uytt2vy" path="res://scenes/object/table4seat.tscn" id="2_2htoe"]
+
+[node name="Object" type="Node2D" unique_id=1112189555]
+y_sort_enabled = true
+
+[node name="table2seat" parent="." unique_id=605681612 instance=ExtResource("1_qdqmx")]
+position = Vector2(415, 348)
+
+[node name="table2seat2" parent="." unique_id=1472571742 instance=ExtResource("1_qdqmx")]
+position = Vector2(631, 350)
+
+[node name="table2seat3" parent="." unique_id=345933841 instance=ExtResource("1_qdqmx")]
+position = Vector2(633, 479)
+
+[node name="table2seat4" parent="." unique_id=166753526 instance=ExtResource("1_qdqmx")]
+position = Vector2(415, 478)
+
+[node name="table4seat1" parent="." unique_id=1626599133 instance=ExtResource("2_2htoe")]
+position = Vector2(227, 346)
+
+[node name="table4seat2" parent="." unique_id=1081234843 instance=ExtResource("2_2htoe")]
+position = Vector2(227, 478)
+
+[node name="table4seat3" parent="." unique_id=847530092 instance=ExtResource("2_2htoe")]
+position = Vector2(825, 346)
+
+[node name="table4seat4" parent="." unique_id=842306566 instance=ExtResource("2_2htoe")]
+position = Vector2(827, 476)
